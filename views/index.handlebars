@@ -1,0 +1,10 @@
+ <h2 class="page-header">Inicio</h2>
+<p>Bienvenido ePak</p>
+{{#if user}}
+
+	<li role="presentation"><a href="/reserva/reserva">Reservar Parqueadero</a></li>
+	<li role="presentation"><a href="/pago/pago">Pagar Parqueadero</a></li>
+	<li role="presentation"><a href="/membresia/membresia">Conseguir membresia</a></li>
+{{else}}
+   	<li role="presentation"><a href="/parqueaderos/parqueaderos">Consultar Disponibilidad</a></li>
+{{/if}}

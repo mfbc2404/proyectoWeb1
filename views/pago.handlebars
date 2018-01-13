@@ -1,0 +1,21 @@
+<h2 class="page-header">Pagar Parqueadero</h2>
+{{#if errors}}
+      {{#each errors}}
+        <div class="alert alert-danger">{{msg}}</div>
+      {{/each}}
+{{/if}}
+<form method="post" action="/pago/pago">
+   
+        <nav>
+          <ul class="nav nav-pills pull-left">
+            <p>Hora o Fracción		$0.50</p>
+            <p>Total tiempo			2h</p>
+            <p>Total a pagar		$1</p>
+           	<div class="form-group">
+			    <label>Cantidad a pagar</label>
+			    <input type="text" class="form-control" name="monto" placeholder="Monto">
+		  	</div>
+            <button type="submit" class="btn btn-default">Ingresar Pago</button>
+          </ul>
+        </nav>
+</form>
